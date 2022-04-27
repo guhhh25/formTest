@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>teste</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="formcss">
+                <form autocomplete="off">
+                    <div>
+                        <label for="productCode">Nome</label>
+                        <input type="text" class="inputRequired1" required name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label for="product">Sobrenome</label>
+                        <input type="text" class="inputRequired2"  name="Surname" id="Surname">
+                    </div>
+                    <div>
+                        <label for="qty">CPF</label>
+                        <input type="text" maxlength="11" class="inputRequired3"  name="CPF" id="CPF">
+                    </div>
+                    <div>
+                        <label for="perPrice">Data de Nascimento</label>
+                        <input type="date" class="inputRequired4" name="date"  id="Date" min="1000-01-01" max="2030-12-31">
+                    </div>
+                    
+                    <div>
+                        <label for="perPrice">Vaga</label>
+                        <input type="text" class="inputRequired5"  name="Job" id="Job">
+                    </div>
+                    
+
+                    <div class="">
+                        <input  class="btn-4" value="SALVAR CANDIDATOS">
+                        <input  class="btn-5" value="ENVIAR CANDIDATOS">
+                    
+                        
+                        <span id="usersNumber"></span>
+                    </div>
+                </form>
+                <div class="errorMessage">
+                    <div class="error">
+                        <svg id="errorImg" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                          </svg> <p>Ocorreu um erro! </p>
+                    </div>
+                    <div class="messageError">
+                        <p>Erro:</p>
+                    </div>
+                </div>
+
+                <div class="sucessMessage">
+                    <div class="sucess">
+                        <svg id="sucessImg" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                          </svg> <p>Sucesso! </p>
+                    </div>
+                    <div class="sucessMessagep">
+                        <p></p>
+                    </div>
+                </div>
+
+
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Cpf</th>
+                                <th>Data de Nascimento</th>
+                                <th>Vaga</th>
+                                <th>Idade</th>
+                                <th>De maior</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

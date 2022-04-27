@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+table{
+    width: 98%;
+    margin: 40px auto;
+    background: rgb(14, 15, 15);
+    color: white;
+    font-weight: bold;
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+.formcss{
+    width: 50%;
+}
+
+td{
+    border: 1px solid rgb(41, 36, 36);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(105, 99, 99);
+}
+
+input[type="text"],input[type="number"], input[type="date"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+    background-color: rgb(48, 42, 42);
+    color: white;
+    margin:25px 0px;
+}
+
+.btn-4 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    line-height: 40px;
+    padding: 2px 25px;
+    background-color: rgb(39, 35, 35);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-4:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.btn-5{
+    position: relative;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    line-height: 40px;
+    padding: 2px 25px;
+    background-color: rgb(39, 35, 35);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-5:hover{
+    background-color: white;
+    color: black;
+}
+
+button{
+    background: rgb(29, 25, 25);
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4b99d8 ;
+}
+
+.form_action--button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_action--button span{
+    margin-top: 20px;
+}
+
+
+
+
+.errorMessage{
+    
+    color: black;
+    position: absolute;
+    top:200px;
+    left: 450px;
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    transition: 0.9s;
+    
+}
+
+.errorMessage .error{
+    background-color: rgb(216, 86, 86);
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.errorMessage .error p{
+    margin-left: 130px;
+}
+
+
+#errorImg{
+    width: 50px;
+    margin-left: 15px;
+    
+}
+
+.messageError{
+    height: 150px;
+    color: black;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.sucessMessage{
+    display: none;
+    color: black;
+    position: absolute;
+    top:200px;
+    left: 450px;
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    transition: 0.9s;
+}
+
+.sucessMessage .sucess{
+    background-color: rgb(123, 219, 115);
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+#sucessImg{
+    width: 50px;
+    margin-left: 15px;
+}
+
+.sucessMessage .sucess p{
+    margin-left: 130px;
+    color: black;
+}
+
+.sucessMessagep{
+    color: black;
+    margin-top: 90px;
+}
+
+.btn-6{
+    position: relative;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    line-height: 40px;
+    padding: 2px 25px;
+    background-color: rgb(216, 86, 86);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
